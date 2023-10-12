@@ -1,0 +1,41 @@
+.main {
+  min-width: 930px;
+  min-height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.element:first-child {
+  border-bottom-left-radius: 8px;
+  border-top-left-radius: 8px;
+  overflow: hidden;
+}
+
+.element:last-child {
+  border-bottom-right-radius: 8px;
+  border-top-right-radius: 8px;
+  overflow: hidden;
+}
+@media screen and (max-width: 376px) {
+  .main {
+    min-width: 300px;
+    min-height: 1326px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  .element:first-child {
+    border-radius: 8px 8px 0 0;
+    overflow: hidden;
+  }
+
+  .element:last-child {
+    border-radius: 0 0 8px 8px;
+    overflow: hidden;
+  }
+}
